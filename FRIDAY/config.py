@@ -1,0 +1,3 @@
+OPENAI_API_KEY = "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"
+ASSISTANT_NAME = "Friday"
+USER_NAME = "User"

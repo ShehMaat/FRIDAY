@@ -1,0 +1,11 @@
+pyttsx3
+speechrecognition
+pyaudio
+wikipedia
+pywhatkit
+requests
+openai
+beautifulsoup4
+lxml
+pipwin 
+pyaudio
