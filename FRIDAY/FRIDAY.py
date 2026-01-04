@@ -3,9 +3,12 @@ from commands.system import handle_system_command
 from commands.web import handle_web_command
 import datetime
 from gpt_module import ask_gpt
+from database.database import init_db
+from commands.file_management import handle_file_command
 
 
 def main():
+    init_db()  # Initialize the database
     speak("Hello, I am your assistant. How can I help you today?")
     
     while True:
@@ -23,6 +26,8 @@ def main():
             speak(f"The current time is {now}")
         
         elif handle_system_command(command):
+            continue
+        elif handle_file_command(command):
             continue
         elif handle_web_command(command):
             continue
